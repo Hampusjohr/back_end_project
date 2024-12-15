@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -75,12 +76,12 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Använder MySQL som backend
-        'NAME': 'lemondatabase',           # Namnet på databasen
-        'USER': 'admin',           # Användarnamnet för databasen
-        'PASSWORD': 'lemon@123',          # Lösenordet för databasen
-        'HOST': 'localhost',                  # Adressen till databasservern (ofta localhost)
-        'PORT': '3306',                       # Portnumret (standard för MySQL är 3306)
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lemondatabase',
+        'USER': 'admin',
+        'PASSWORD': 'lemon@123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
