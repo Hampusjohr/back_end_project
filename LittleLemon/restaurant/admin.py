@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Menu, Booking
-
+from rest_framework.authtoken.models import Token
 
 @admin.register(Menu)
 class MenuAdmin(admin.ModelAdmin):
