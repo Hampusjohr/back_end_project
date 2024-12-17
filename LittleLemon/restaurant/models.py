@@ -11,7 +11,7 @@ class Menu(models.Model):
         db_table = 'menu'
 
     def __str__(self):
-        return self.title
+        return f'{self.title} : {str(self.price)}'
 
 
 class Booking(models.Model):
